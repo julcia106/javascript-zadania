@@ -135,3 +135,46 @@ function showAverage(t){
 }
    
 showAverage(tab);
+
+// Zadanie 7
+
+const tab = [4, 2, 6, 1, 12, 65, 3];
+
+const sortTab = tab.sort((a , b) => a - b);
+console.log(sortTab);
+
+// Zadanie 8
+
+const arrayA = [1,2,3];
+const arrayB = [4,5,6];
+
+function sumArrayValue(arrayA, arrayB){
+    let newArray = [];
+
+    arrayA.forEach((num1, i) => {
+        newArray.push(num1 + arrayB[i]);
+    });
+    return newArray;
+}
+console.log(sumArrayValue(arrayA, arrayB));
+
+// Zadanie 9
+
+let numArray = [1,2,3,4,5,-21,-10,0];
+
+function reverseNumber(t){
+
+    let newArray = [];
+
+    for(let i = 0; i < numArray.length; i++){
+
+        if( t[i] == 0)
+            newArray.push(0);
+        else
+            newArray.push((t[i] * (-1))); 
+    }
+
+    return newArray;
+}
+
+console.log(reverseNumber(numArray));
