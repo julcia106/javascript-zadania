@@ -92,3 +92,122 @@ for(let i= 0; i<= 100; i++)
 
 // Zadanie 8
 
+// a)
+
+let x = 5;
+
+for(let i = 1; i <= x; i++)
+  {
+    let str = "";
+
+    for( let j = 1; j <= i ; j++)
+      {
+        str += '*'
+      }
+    console.log(str);
+  }
+
+  // b)
+
+  for (let i = 0; i < 5; i++) {
+
+    let str = '';
+
+    for (let x = 0; x < 5 - i; x++) {
+
+        str += ' ';
+    }
+
+    for (let y = 0; y < i + 1; y++) {
+        str += ' ' + '*';
+    }
+
+    console.log(str);
+}
+
+// c)
+
+
+for (let i = 0; i < 5; i++) {
+
+  let str = '';
+
+  for (let x = 0; x < 5 - i; x++) {
+
+      str += ' ';
+  }
+
+  for (let y = 0; y < (2 * i + 1); y++) {
+
+      str += '*';
+  }
+
+  console.log(str);
+}
+
+// d)
+
+for (let i = 0; i < 5; i++) {
+
+  let str = '';
+
+  for (let x = 0; x < i + 1; x++) {
+
+      str += '*';
+  }
+
+  for (let y = 0; y < 5 - (i + 1); y++) {
+
+      str += (y + 1);
+  }
+
+  console.log(str);
+}
+
+console.log('-----');
+
+for (let i = 0; i < 5; i++) {
+
+  let str = '';
+
+  for (let x = 0; x < (5 - i); x++) {
+
+      str += "*";
+  }
+
+  for (let y = 0; y < 5 - (5 - i); y++) {
+
+      str += 5 - ((5 - (5 - i)) - y);
+  }
+
+  console.log(str);
+}
+
+// e)
+
+for (let i = 1; i <= 5; i++) {
+
+  let str = "";
+
+  for (let j = 5 - i; j > 0; j--) {
+
+      str += " ";
+  }
+  for (let j = i * 2 - 1; j > 0; j--) {
+
+      if(j % 2){
+
+        str += "*";
+
+      } else {
+
+        str += " ";
+      }
+  }
+  console.log(str);
+}
+
+for(let k = 0; k < 3; k++){
+
+    console.log("    *");
+}

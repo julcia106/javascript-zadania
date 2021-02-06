@@ -1,4 +1,4 @@
-#### Zadanie 1
+#### Zadanie 1 
 
 Stwórz konstruktor Person z następującymi właściwościami:
 
